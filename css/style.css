@@ -1,11 +1,11 @@
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   src: url(/fonts/Montserrat-Regular.ttf);
 }
 
 :root {
   --primaryColor: #333333;
-  --secondColor: #047aed;
+  --secondColor: #ec1c23;
 }
 
 * {
@@ -16,7 +16,7 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: var(--primaryColor);
   line-height: 1.6;
 }
@@ -44,6 +44,12 @@ ul {
 a {
   text-decoration: none;
   color: var(--primaryColor);
+}
+
+.hidden {
+  visibility: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 .navbar {
@@ -133,9 +139,9 @@ a {
   margin: 30px 0;
 }
 
-.showcase .showcase-form .form-control input[type='text'],
-.showcase .showcase-form .form-control input[type='tel'],
-.showcase .showcase-form .form-control input[type='email'] {
+.showcase .showcase-form .form-control input[type="text"],
+.showcase .showcase-form .form-control input[type="tel"],
+.showcase .showcase-form .form-control input[type="email"] {
   border: 0;
   border-bottom: 1px solid #b4becb;
   width: 100%;
@@ -146,7 +152,7 @@ a {
 
 .showcase::before,
 .showcase::after {
-  content: '';
+  content: "";
   position: absolute;
   height: 100px;
   bottom: -70px;
