@@ -1,0 +1,173 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url(/fonts/Montserrat-Regular.ttf);
+}
+
+:root {
+  --primaryColor: #333333;
+  --secondColor: #047aed;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--primaryColor);
+  line-height: 1.6;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+
+p {
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primaryColor);
+}
+
+.navbar {
+  background-color: var(--secondColor);
+  color: #ffffff;
+  height: 70px;
+}
+
+.navbar .flex {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar .flex .logo {
+  font-weight: 500;
+}
+
+.navbar .flex ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar .flex a {
+  color: #fff;
+  padding: 10px;
+  margin: 0 5px;
+  text-transform: capitalize;
+}
+
+.navbar .flex a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+.showcase {
+  background-color: var(--secondColor);
+  color: #fff;
+  height: 400px;
+  position: relative;
+}
+
+.showcase .grid {
+  -ms-grid-columns: 55% 45%;
+      grid-template-columns: 55% 45%;
+  gap: 30px;
+  overflow: visible;
+}
+
+.showcase .grid h1 {
+  font-size: 40px;
+}
+
+.showcase .grid p {
+  margin: 20px 0;
+}
+
+.showcase .showcase-pic {
+  background-image: url(/img/bowl-of-ramen.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  top: 65px;
+  height: 350px;
+  width: 400px;
+  padding: 40px;
+  z-index: 100;
+}
+
+.showcase .showcase-pic h2 {
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+}
+
+.showcase .showcase-form {
+  position: relative;
+  height: 350px;
+  width: 400px;
+  padding: 40px;
+  z-index: 100;
+}
+
+.showcase .showcase-form .form-control {
+  margin: 30px 0;
+}
+
+.showcase .showcase-form .form-control input[type='text'],
+.showcase .showcase-form .form-control input[type='tel'],
+.showcase .showcase-form .form-control input[type='email'] {
+  border: 0;
+  border-bottom: 1px solid #b4becb;
+  width: 100%;
+  padding: 3px;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+.showcase::before,
+.showcase::after {
+  content: '';
+  position: absolute;
+  height: 100px;
+  bottom: -70px;
+  right: 0;
+  left: 0;
+  background: #fff;
+  -webkit-transform: skewY(-3deg);
+          transform: skewY(-3deg);
+}
+
+.stats {
+  padding-top: 100px;
+}
+
+.stats .stats-heading {
+  max-width: 500px;
+  margin: auto;
+}
+
+.stats .grid p {
+  font-size: 20px;
+  font-weight: bold;
+}
+/*# sourceMappingURL=style.css.map */
